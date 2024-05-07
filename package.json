@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "selenium-webdriver": "^4.19.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.8.1"
   }
 }
