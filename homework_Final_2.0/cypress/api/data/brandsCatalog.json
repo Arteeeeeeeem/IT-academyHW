@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "title": {
+        "type": "string"
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            },
+            "is_new": {
+              "type": "boolean"
+            },
+            "preview": {
+              "type": "string"
+            },
+            "count": {
+              "type": "number"
+            },
+            "price_min": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "currency"
+              ]
+            },
+            "type": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "source_urls": {
+              "type": "object",
+              "properties": {
+                "catalog.schema": {
+                  "type": "string"
+                },
+                "catalog.schema.products": {
+                  "type": "string"
+                },
+                "catalog.schema.facets": {
+                  "type": "string"
+                },
+                "catalog.schema.second.offers": {
+                  "type": "string"
+                },
+                "catalog.product": {
+                  "type": "string"
+                },
+                "catalog.product.reviews": {
+                  "type": "string"
+                },
+                "catalog.product.prices": {
+                  "type": "string"
+                }
+              },
+              "required": []
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "is_new",
+            "preview",
+            "count",
+            "price_min",
+            "type",
+            "url",
+            "source_urls"
+          ]
+        }
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "links"
+    ]
+  }
+}
