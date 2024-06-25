@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "ad_id": {
+      "type": "string"
+    },
+    "bannerName": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "creative_id": {
+      "type": "string"
+    },
+    "creative_name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "slot": {
+      "type": "string"
+    },
+    "subtext3": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ad_id",
+    "bannerName",
+    "color",
+    "creative_id",
+    "creative_name",
+    "href",
+    "icon",
+    "slot",
+    "subtext3",
+    "text",
+    "title"
+  ]
+}

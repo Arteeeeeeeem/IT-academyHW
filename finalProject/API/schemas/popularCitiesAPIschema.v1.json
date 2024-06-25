@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "aoid": {
+        "type": "string"
+      },
+      "city": {
+        "type": "object",
+        "properties": {
+          "aoid": {
+            "type": "string"
+          },
+          "level_name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "aoid",
+          "level_name",
+          "role",
+          "title"
+        ]
+      },
+      "district": {
+        "type": "object",
+        "properties": {
+          "aoid": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "aoid",
+          "role",
+          "title"
+        ]
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ]
+      },
+      "region": {
+        "type": "object",
+        "properties": {
+          "aoid": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "aoid",
+          "role",
+          "title"
+        ]
+      }
+    },
+    "required": [
+      "aoid",
+      "city",
+      "district",
+      "location",
+      "region"
+    ]
+  }
+}

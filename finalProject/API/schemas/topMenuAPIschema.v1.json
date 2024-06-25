@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "breadcrumbs": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                },
+                "required": []
+              }
+            },
+            "required": [
+              "item"
+            ]
+          },
+          "class": {
+            "type": "string"
+          },
+          "net_image": {
+            "type": "string"
+          },
+          "tabs_wrapper": {
+            "type": "object",
+            "properties": {
+              "tabs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "target": {
+                      "type": "string"
+                    },
+                    "top": {
+                      "type": "object",
+                      "properties": {
+                        "groups": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "align": {
+                                      "type": "string"
+                                    },
+                                    "block_id": {
+                                      "type": "number"
+                                    },
+                                    "content_type": {
+                                      "type": "string"
+                                    },
+                                    "items": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "class": {
+                                            "type": "string"
+                                          },
+                                          "text": {
+                                            "type": "string"
+                                          },
+                                          "url": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "text"
+                                        ]
+                                      }
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "banner": {
+                                      "type": "object",
+                                      "properties": {
+                                        "banner_slot": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "banner_slot"
+                                      ]
+                                    },
+                                    "display_type": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "align",
+                                    "block_id",
+                                    "content_type"
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "required": [
+                            "data"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "groups"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "target",
+                    "top"
+                  ]
+                }
+              },
+              "triggers": {
+                "type": "object",
+                "properties": {
+                  "top": {
+                    "type": "object",
+                    "properties": {
+                      "trigger": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "target": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "target",
+                            "text",
+                            "url"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "trigger"
+                    ]
+                  }
+                },
+                "required": [
+                  "top"
+                ]
+              }
+            },
+            "required": [
+              "tabs",
+              "triggers"
+            ]
+          },
+          "title": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "url"
+            ]
+          }
+        },
+        "required": [
+          "title"
+        ]
+      }
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "category",
+    "id"
+  ]
+}
